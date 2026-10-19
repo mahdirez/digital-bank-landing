@@ -15,7 +15,15 @@ export function Hero() {
           </p>
           <Button>Request Invite</Button>
         </div>
-        <div className={styles.visual} aria-hidden="true" />
+        <div className={styles.visual}>
+          <img
+            className={styles.mockups}
+            src="/images/image-mockups.png"
+            alt=""
+            width={584}
+            height={665}
+          />
+        </div>
       </div>
     </section>
   )
