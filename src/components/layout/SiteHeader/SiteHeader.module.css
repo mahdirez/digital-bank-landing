@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: 100;
-  padding-block: var(--space-md);
+  padding-block: 1.75rem;
   background-color: var(--color-white);
 }
 

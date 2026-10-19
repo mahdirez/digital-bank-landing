@@ -8,6 +8,7 @@
   font-weight: var(--font-weight-regular);
   font-size: clamp(2rem, 4vw, 2.5rem);
   margin-bottom: var(--space-xl);
+  text-align: center;
 }
 
 .grid {
@@ -17,8 +18,7 @@
 
 .image {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  height: auto;
 }
 
 .body {
@@ -50,6 +50,10 @@
 }
 
 @media (min-width: 64em) {
+  .title {
+    text-align: left;
+  }
+
   .grid {
     grid-template-columns: repeat(4, 1fr);
   }

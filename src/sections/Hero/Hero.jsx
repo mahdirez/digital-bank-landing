@@ -4,6 +4,10 @@ import styles from './Hero.module.css'
 export function Hero() {
   return (
     <section id="home" className={styles.hero} aria-labelledby="hero-heading">
+      <picture className={styles.introBg} aria-hidden="true">
+        <source media="(min-width: 64em)" srcSet="/images/bg-intro-desktop.svg" />
+        <img src="/images/bg-intro-mobile.svg" alt="" />
+      </picture>
       <div className={`container ${styles.grid}`}>
         <div className={styles.content}>
           <h1 id="hero-heading" className={styles.title}>

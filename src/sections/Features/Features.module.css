@@ -20,6 +20,14 @@
   gap: var(--space-lg);
 }
 
+.card img {
+  margin-inline: auto;
+}
+
+.card {
+  text-align: center;
+}
+
 .cardTitle {
   color: var(--color-blue-950);
   font-weight: var(--font-weight-bold);
@@ -44,5 +52,13 @@
 
   .grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card {
+    text-align: left;
+  }
+
+  .card img {
+    margin-inline: 0;
   }
 }
