@@ -1,4 +1,3 @@
-/** Image paths — add JPGs to public/images when you have the full asset pack */
 export const articles = [
   {
     id: 'currency',

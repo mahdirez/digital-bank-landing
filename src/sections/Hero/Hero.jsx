@@ -15,9 +15,7 @@ export function Hero() {
           </p>
           <Button>Request Invite</Button>
         </div>
-        <div className={styles.visual} aria-hidden="true">
-          {/* Mockup + intro background — مرحله Hero */}
-        </div>
+        <div className={styles.visual} aria-hidden="true" />
       </div>
     </section>
   )

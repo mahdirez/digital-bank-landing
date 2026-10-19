@@ -1,5 +1,4 @@
 :root {
-  /* Colors — style-guide.md */
   --color-blue-950: hsl(233, 26%, 24%);
   --color-green-500: hsl(136, 64%, 51%);
   --color-cyan-400: hsl(192, 69%, 51%);
@@ -14,21 +13,18 @@
     var(--color-cyan-400)
   );
 
-  /* Typography */
   --font-family: 'Public Sans', system-ui, sans-serif;
   --font-size-body: 1.125rem;
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 
-  /* Layout — design widths 375 / 1440 */
   --layout-max: 90rem;
   --content-max: 69.375rem;
   --gutter: 1.5rem;
 
   --bp-desktop: 64em;
 
-  /* Spacing scale */
   --space-2xs: 0.5rem;
   --space-xs: 0.75rem;
   --space-sm: 1rem;
