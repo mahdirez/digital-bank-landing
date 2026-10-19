@@ -1,7 +1,8 @@
 .hero {
   position: relative;
   z-index: 2;
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
   background-color: var(--color-white);
   background-image: url('/images/bg-intro-mobile.svg');
   background-repeat: no-repeat;
@@ -61,7 +62,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: var(--space-lg);
-    padding-block: 5.5rem 8.5rem;
+    padding-block: 5.5rem 5rem;
   }
 
   .content {
@@ -75,9 +76,11 @@
 
   .media {
     order: 0;
+    z-index: 3;
     width: 100%;
     min-height: 32rem;
     margin: 0;
+    pointer-events: none;
   }
 
   .mockups {
