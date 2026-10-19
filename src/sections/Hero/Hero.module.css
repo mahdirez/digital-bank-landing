@@ -1,0 +1,30 @@
+.hero {
+  padding-block: var(--space-xl) var(--space-2xl);
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.title {
+  color: var(--color-blue-950);
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-md);
+}
+
+.lead {
+  margin-bottom: var(--space-lg);
+  max-width: 33rem;
+}
+
+@media (min-width: 64em) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
