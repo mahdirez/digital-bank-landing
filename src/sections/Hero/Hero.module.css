@@ -1,25 +1,17 @@
 .hero {
   position: relative;
   z-index: 2;
+  overflow: hidden;
+  background-color: var(--color-white);
+  background-image: url('/images/bg-intro-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center -7.5rem;
+  background-size: 100% auto;
+}
+
+.grid {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-white);
-  overflow: hidden;
-}
-
-.media {
-  order: -1;
-  position: relative;
-  z-index: 1;
-  width: min(100%, 22rem);
-  margin-inline: auto;
-  margin-top: -0.5rem;
-  margin-bottom: var(--space-md);
-}
-
-.shell {
-  position: relative;
-  z-index: 2;
   padding-block: var(--space-md) var(--space-xl);
 }
 
@@ -42,76 +34,57 @@
   margin-inline: auto;
 }
 
-.introMobile {
-  position: absolute;
-  left: 50%;
-  top: -3.25rem;
-  width: 100vw;
-  max-width: 28rem;
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-
-.introDesktop {
-  display: none;
+.media {
+  order: -1;
+  position: relative;
+  width: min(100%, 21.5rem);
+  margin-inline: auto;
+  margin-bottom: var(--space-sm);
 }
 
 .mockups {
-  position: relative;
-  z-index: 1;
+  display: block;
   width: 100%;
   max-width: none;
   height: auto;
-  margin-inline: auto;
 }
 
 @media (min-width: 64em) {
   .hero {
-    display: block;
-    overflow: visible;
-    padding-bottom: 2rem;
+    background-image: url('/images/bg-intro-desktop.svg');
+    background-position: right -22rem top -20rem;
+    background-size: 79.5rem auto;
   }
 
-  .shell {
-    width: min(100% - var(--gutter) * 2, var(--content-max));
-    padding-block: 4.5rem 10rem;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: var(--space-lg);
+    padding-block: 5.5rem 8.5rem;
   }
 
   .content {
-    width: min(100%, 32rem);
     text-align: left;
   }
 
   .lead {
+    max-width: 28rem;
     margin-inline: 0;
   }
 
   .media {
     order: 0;
-    position: absolute;
-    top: -7.5rem;
-    right: max(0rem, calc((100vw - min(100vw - var(--gutter) * 2, var(--content-max))) / 2 - 1.5rem));
-    width: min(36.5rem, 42vw);
+    width: 100%;
+    min-height: 32rem;
     margin: 0;
   }
 
-  .introMobile {
-    display: none;
-  }
-
-  .introDesktop {
-    display: block;
-    position: absolute;
-    top: -2rem;
-    right: -3.5rem;
-    width: 125%;
-    max-width: none;
-    pointer-events: none;
-  }
-
   .mockups {
-    display: block;
-    width: 100%;
-    margin-top: 3.5rem;
+    position: absolute;
+    top: -7.5rem;
+    right: calc((min(100vw - var(--gutter) * 2, var(--content-max)) - 100vw) / 2 - 1.75rem);
+    width: 41rem;
+    max-width: none;
   }
 }

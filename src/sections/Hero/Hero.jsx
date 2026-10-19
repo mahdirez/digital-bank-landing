@@ -4,7 +4,7 @@ import styles from './Hero.module.css'
 export function Hero() {
   return (
     <section id="home" className={styles.hero} aria-labelledby="hero-heading">
-      <div className={`container ${styles.shell}`}>
+      <div className={`container ${styles.grid}`}>
         <div className={styles.content}>
           <h1 id="hero-heading" className={styles.title}>
             Next generation digital banking
@@ -15,17 +15,15 @@ export function Hero() {
           </p>
           <Button>Request Invite</Button>
         </div>
-      </div>
-      <div className={styles.media} aria-hidden="true">
-        <img className={styles.introMobile} src="/images/bg-intro-mobile.svg" alt="" />
-        <img className={styles.introDesktop} src="/images/bg-intro-desktop.svg" alt="" />
-        <img
-          className={styles.mockups}
-          src="/images/image-mockups.png"
-          alt=""
-          width={584}
-          height={665}
-        />
+        <div className={styles.media}>
+          <img
+            className={styles.mockups}
+            src="/images/image-mockups.png"
+            alt=""
+            width={584}
+            height={665}
+          />
+        </div>
       </div>
     </section>
   )
