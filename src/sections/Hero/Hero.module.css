@@ -53,16 +53,16 @@
 @media (min-width: 64em) {
   .hero {
     background-image: url('/images/bg-intro-desktop.svg');
-    background-position: right -22rem top -20rem;
-    background-size: 79.5rem auto;
+    background-position: right -21rem top -15rem;
+    background-size: 81rem auto;
   }
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: start;
     gap: var(--space-lg);
-    padding-block: 5.5rem 5rem;
+    padding-block: 5.5rem 2.5rem;
   }
 
   .content {
@@ -78,16 +78,16 @@
     order: 0;
     z-index: 3;
     width: 100%;
-    min-height: 32rem;
+    min-height: 36rem;
     margin: 0;
     pointer-events: none;
   }
 
   .mockups {
     position: absolute;
-    top: -7.5rem;
-    right: calc((min(100vw - var(--gutter) * 2, var(--content-max)) - 100vw) / 2 - 1.75rem);
-    width: 41rem;
+    top: -5.25rem;
+    right: calc((min(100vw - var(--gutter) * 2, var(--content-max)) - 100vw) / 2 - 2rem);
+    width: 42.5rem;
     max-width: none;
   }
 }
